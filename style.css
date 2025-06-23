@@ -192,6 +192,7 @@
     .sign-up-form .content-right, .sign-up-form .content-right img {
         margin: 0;
         border-radius: 0;
+        border-bottom-right-radius: 1rem;
     }
 
     .content-left button {
