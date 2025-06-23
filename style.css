@@ -108,6 +108,7 @@
     color: var(--White);
     cursor: pointer;
     outline: none;
+    transition: background-color .3s ease-in-out;
 }
 
 .hide {
