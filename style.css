@@ -46,7 +46,7 @@
 }
 
 .content-left {
-    padding: 4.8rem 2.9rem 0 2rem;
+    padding: 4.8rem 2.9rem 0 min(2rem, 1%);
 }
 
 .content-left h1 {
@@ -107,6 +107,7 @@
     background-color: var(--Blue-800);
     color: var(--White);
     cursor: pointer;
+    outline: none;
 }
 
 .hide {
@@ -168,4 +169,56 @@
 
 .active {
     display: block;
+}
+
+@media (max-width: 500px) {
+    .sign-up-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .sign-up-form .content-left {
+        order: 1;
+    }
+
+    .sign-up-form .content-right, .sign-up-form .content-right img {
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .content-left button {
+        margin-bottom: 2rem;
+    }
+
+    .content-left h1 {
+        font-size: 2.6rem;
+    }
+
+    .content-left {
+        padding-top: 3rem;
+    }
+
+    .success-container {
+        margin: 0;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 5rem 1.5rem 1rem 1.5rem;
+    }
+
+    .success-container h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .success-container p {
+        line-height: 1.5rem;
+    }
+
+    .success-container button {
+        margin-top: 30%;
+    }
 }
